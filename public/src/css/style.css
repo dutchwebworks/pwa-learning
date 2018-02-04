@@ -20,6 +20,10 @@ h2 {
 	font-size: 35px;
 }
 
+img {
+	max-width: 100%;
+}
+
 /* Main
 ---------------------------------- */
 
@@ -59,6 +63,9 @@ nav a {
 nav a:hover {
 	color: #444;
 }
+
+/* No service-worker banner
+---------------------------------- */
 
 .no-service-worker.is-hidden {
 	display: none;

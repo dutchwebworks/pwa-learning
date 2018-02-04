@@ -7,7 +7,8 @@ self.addEventListener("install", function(event){
 					"/index.html",
 					"/about.html",
 					"/src/css/style.css",
-					"/src/js/app.js"
+					"/src/js/app.js",
+					"/src/img/pwa-512x512.png"
 				])
 			})		
 	);
