@@ -1,0 +1,21 @@
+{
+  "name": "pwa-learning",
+  "version": "1.0.0",
+  "description": "Learning about building PWA's",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 3000"
+  },
+  "keywords": [
+    "pwa",
+    "javascript",
+    "progressive",
+    "web",
+    "app"
+  ],
+  "author": "Dennis Burger <dennis@dutchwebworks.nl>",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
