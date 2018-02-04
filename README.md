@@ -5,8 +5,21 @@
 ## Prerequisites
 
 * [NodeJS](https://nodejs.org/en/)
-* [GruntJS](https://gruntjs.com)
-* [GulpJS](https://gulpjs.com)
-* [VueJS](https://vuejs.org)
 
-## Learning Progressive-Web-Apps
+## Installation
+
+Run the normal install inside this directory.
+
+```bash
+npm install
+```
+
+## Running this demo
+
+Run the following NPM script to start a local `hhtp-server`.
+
+```bash
+npm start
+```
+
+## What is this demo about
