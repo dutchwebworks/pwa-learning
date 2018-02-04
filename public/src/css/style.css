@@ -59,3 +59,20 @@ nav a {
 nav a:hover {
 	color: #444;
 }
+
+.no-service-worker.is-hidden {
+	display: none;
+}
+
+.no-service-worker {
+	padding: 10px;
+	background-color: yellow;
+}
+
+.no-service-worker p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+}
