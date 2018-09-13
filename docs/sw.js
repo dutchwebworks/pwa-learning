@@ -8,7 +8,8 @@ self.addEventListener("install", function(event){
 					"/about.html",
 					"/css/style.css",
 					"/js/app.js",
-					"/img/pwa-512x512.png"
+					"/img/pwa-512x512.png",
+					"/manifest.json"
 				])
 			})		
 	);
