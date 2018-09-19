@@ -1,11 +1,10 @@
 # PWA Learning
 
-*By Dennis Burger, Poort80 Amsterdam, may 2018*
+*By Dennis Burger, Poort80 Amsterdam, september 2018*
 
 ## Prerequisites
 
 * [NodeJS](https://nodejs.org/en/)
-* [OpenSSL](https://www.openssl.org/)
 
 ## Installation
 
@@ -15,32 +14,43 @@ Checkout this Git repo, open a **Terminal** (or command-line) and `cd` into this
 npm install
 ```
 
-## Running this demo
+## Run the local development web server
 
-To run (and host) this demo on your local machine; **and view it later on a smart device** (smartphone / tablet, on the same WiFi network as your local machine) you'll need to run a local **SSL server**. PWA's require a secure connection.
-
-You'll need to generate a self-signed SSL certificate to run the local `http-server`. 
-
-## Generate self-signed SSL certificate
-
-Open a Terminal and run the command below to generate a `key.pem` and `cert.pem` files required for the `http-server`. More info can be found on [this Stackoverflow page](https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl).
+Run the following NPM script to start a local web server.
 
 ```bash
-openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+npm run dev
 ```
 
-## Run the server
+According to the `package.json` file settings; the `docs/` directory is being served to the web browser. This `docs/` directory is used deliberately to host this repo's demo on Github Pages. Which requires your site to be in the `docs/` directory.
 
-In the `package.json` file are some NPM settings (see `start` script) for the `http-server`. Run the following NPM script to start a local `hhtp-server`.
+### Open web browser
+
+After entering the above command a web browser should automatically open. Or open it manually and enter the address that is displayed in the terminal.
+
+## Local inspect PWA
+
+As of this writing it's best to use Chrome's or Firefox's Developer Tools to inspect the workings of this PWA demo. As they offer the best inspecting tools for PWA's.
+
+## Test on real devices
+
+When testing on your own computers **localhost**; a PWA can and **work without HTTPS for local development**. 
+
+But when you want to test it in another browser on a another device (or real smart device) then a **PWA requires HTTPS**. Setting up SSL locally is a bit of a hasle. You can use the **free** [nGrok.io](https://ngrok.com/) service to have a **HTTPS tunnel** connection to your PWA app running on your **localhost**.
+
+* Create an account on [nGrok.io](https://ngrok.com/)
+* Enter your **nGrok Auth Tunnel token** on the command-line, see https://dashboard.ngrok.com/auth
+* Open another terminal window and `cd` to your PWA project. Run `npm run dev` to start your PWA project. Note the port number it's running on. You'll need it in the next section.
+* Then 'expose' your PWA project running on `localhost` using a HTTPS subdomain that nGrok will provide you with by running.
 
 ```bash
-npm run start
+ngrok http 8081
 ```
 
-According to the `package.json` file setting the `./docs` directory is being served to the web browser. This `./docs` directory is used specificly to host this repo's demo on Github Pages.
+The above **port number** `8081` **must match the port number from your PWA project** that's already running on `localhost` (which was the result of running `npm run dev`).
 
-## Open the browser
+On the command-line **nGrok will show you a HTTP and HTTPS domainname**. That domainname will proxy all requests straight to your `localhost` PWA project. Open that domainname on a real smart device for testing.
 
-Open a web browser at the following address. Or change the IP number to your computers IP nummer and run that address on your smartdevice (smartphone or tablet) to test / view this PWA demo.
+### Clear the cache
 
-	https://127.0.0.1:3000
+Remember when developing a PWA you'll need to clear that web browsers cache and update the service-worker in order to have a new version running.
