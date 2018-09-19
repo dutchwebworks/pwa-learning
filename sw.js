@@ -5,7 +5,7 @@ const version = "0.1.0";
 const appAssets = [
 	"/",
 	"/css/style.css",
-	"/img/pwa-512x512.png",
+	"/img/pwa-logo.png",
 	"/js/app.js",
 	"/about.html",
 	"/favicon.ico",
@@ -14,7 +14,7 @@ const appAssets = [
 
 // SW Install
 self.addEventListener("install", e => {
-	e.waitUntill(
+	e.waitUntil(
 		caches.open(`static-${version}`)
 			.then(cache => cache.addAll(appAssets))
 	);
@@ -30,9 +30,8 @@ self.addEventListener("activate", e => {
 				return caches.delete(key);
 			}
 		});
-	})
-
-	e.waitUntill(cleaned);
+	});
+	e.waitUntil(cleaned);
 });
 
 // Static cache strategy - Cache with Network Fallback
