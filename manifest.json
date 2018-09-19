@@ -1,45 +1,52 @@
 {
 	"name": "PWA Learning",
 	"short_name": "PWA-L",
-	"description": "Learning about building PWA's",
-	"start_url": "/index.html",
-	"scope": ".",
-	"display": "standalone",
-	"background_color": "#fff",
 	"theme_color": "deeppink",
-	"dir": "ltr",
-	"lang": "en-US",
-	"orientation": "portrait-primary",
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"orientation": "portrait",
+	"Scope": ".",
+	"start_url": ".",
 	"icons": [
 		{
-			"src": "/img/apple-touch-icon.png",
-			"type": "image/png",
-			"sizes": "180x180"
+			"src": "/images/icon-72x72.png",
+			"sizes": "72x72",
+			"type": "image/png"
 		},
 		{
-			"src": "/img/favicon-16x16.png",
-			"type": "image/png",
-			"sizes": "16x16"
+			"src": "/images/icon-96x96.png",
+			"sizes": "96x96",
+			"type": "image/png"
 		},
 		{
-			"src": "/img/favicon-32x32.png",
-			"type": "image/png",
-			"sizes": "32x32"
+			"src": "/images/icon-128x128.png",
+			"sizes": "128x128",
+			"type": "image/png"
 		},
 		{
-			"src": "/img/mstile-150x150.png",
-			"type": "image/png",
-			"sizes": "150x150"
+			"src": "/images/icon-144x144.png",
+			"sizes": "144x144",
+			"type": "image/png"
 		},
 		{
-			"src": "/img/pwa-192x192.png",
-			"type": "image/png",
-			"sizes": "192x192"
+			"src": "/images/icon-152x152.png",
+			"sizes": "152x152",
+			"type": "image/png"
 		},
 		{
-			"src": "/img/pwa-512x512.png",
-			"type": "image/png",
-			"sizes": "152x152"
+			"src": "/images/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/icon-384x384.png",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
 		}
 	]
 }
