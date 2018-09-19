@@ -3,13 +3,22 @@ const version = "0.1.0";
 
 // Static Cache - App Shell
 const appAssets = [
+	// Pages
 	"/",
-	"/css/style.css",
-	"/img/pwa-logo.png",
-	"/js/app.js",
 	"/about.html",
+	"/index.html",
+
+	// CSS
+	"/css/style.css",
+
+	// Scripts
+	"/js/app.js",
+
+	// Images
 	"/favicon.ico",
-	"/index.html"
+	"/img/delorean.jpg",
+	"/img/pwa-brand.jpg",
+	"/img/pwa-logo.png"
 ];
 
 // SW Install
