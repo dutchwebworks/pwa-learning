@@ -4,18 +4,18 @@
   "description": "Learning about building PWA's",
   "main": "index.js",
   "scripts": {
-    "dev": "http-server . -o"
+    "dev": "npm run build && http-server ./docs -o -p 3000",
+    "build": "node sw_build.js"
   },
   "keywords": [
     "pwa",
-    "javascript",
-    "progressive",
-    "web",
-    "app"
+    "workbox",
+    "javascript"
   ],
   "author": "Dennis Burger <dennis@dutchwebworks.nl>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "workbox-build": "^3.6.2"
   }
 }
