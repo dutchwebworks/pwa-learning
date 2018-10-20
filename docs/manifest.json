@@ -1,12 +1,15 @@
 {
 	"name": "PWA Learning",
 	"short_name": "PWA-L",
+	"description": "Learning PWA's using Workbox",
 	"theme_color": "deeppink",
 	"background_color": "#ffffff",
 	"display": "standalone",
+	"scope": ".",
+	"start_url": "/?utm_source=web_app_manifest",
+	"dir": "ltr",
+	"lang": "en-US",
 	"orientation": "portrait",
-	"Scope": ".",
-	"start_url": ".",
 	"icons": [
 		{
 			"src": "/img/icon-72x72.png",
