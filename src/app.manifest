@@ -5,11 +5,11 @@
 	"theme_color": "deeppink",
 	"background_color": "#ffffff",
 	"display": "standalone",
-	"scope": ".",
-	"start_url": "/?utm_source=web_app_manifest",
+	"scope": "./",
+	"start_url": "./?utm_source=pwa",
 	"dir": "ltr",
 	"lang": "en-US",
-	"orientation": "portrait",
+	"orientation": "any",
 	"icons": [
 		{
 			"src": "/img/icon-72x72.png",

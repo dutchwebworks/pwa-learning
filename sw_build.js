@@ -1,10 +1,10 @@
 // Require Workbox build
-const {generateSW} =  require('workbox-build');
+const { generateSW } =  require('workbox-build');
 
 generateSW({
     // Destination directory of build service-worker file
-    swDest: "docs/sw.js",
-    globDirectory: "docs",
+    swDest: "src/sw.js",
+    globDirectory: "src",
 
     // Precache
     globPatterns: [
