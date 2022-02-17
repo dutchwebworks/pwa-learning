@@ -1,27 +1,2 @@
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/6.2.0/workbox-sw.js");
-
-workbox.routing.registerRoute(
-  /\.(?:css|js)$/,
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: "assets",
-    plugins: [
-      new workbox.expiration.ExpirationPlugin({
-        maxEntries: 1000,
-        maxAgeSeconds: 1800,
-      }),
-    ],
-  })
-);
-
-workbox.routing.registerRoute(
-  /\.(?:png|jpg|gif)$/,
-  new workbox.strategies.CacheFirst({
-    cacheName: "images",
-    plugins: [
-      new workbox.expiration.ExpirationPlugin({
-        maxEntries: 1000,
-        maxAgeSeconds: 1800,
-      }),
-    ],
-  })
-);
+if(!self.define){let e,s={};const c=(c,i)=>(c=new URL(c+".js",i).href,s[c]||new Promise((s=>{if("document"in self){const e=document.createElement("script");e.src=c,e.onload=s,document.head.appendChild(e)}else e=c,importScripts(c),s()})).then((()=>{let e=s[c];if(!e)throw new Error(`Module ${c} didn’t register its module`);return e})));self.define=(i,n)=>{const r=e||("document"in self?document.currentScript.src:"")||location.href;if(s[r])return;let a={};const o=e=>c(e,r),t={module:{uri:r},exports:a,require:o};s[r]=Promise.all(i.map((e=>t[e]||o(e)))).then((e=>(n(...e),a)))}}define(["./workbox-ece55c9b"],(function(e){"use strict";e.setCacheNameDetails({prefix:"pwa-learning"}),self.addEventListener("message",(e=>{e.data&&"SKIP_WAITING"===e.data.type&&self.skipWaiting()})),e.precacheAndRoute([{url:"css/style.css",revision:"0e48ad86ea9a8178a4465d419f2c7367"},{url:"js/registerSW.js",revision:"d77487e6b8c86ac6953e3e842c0f08dc"},{url:"favicon.ico",revision:"1025c45b9c621133a5a84d8e26cc506d"},{url:"img/delorean.jpg",revision:"6c8b47c08c398922a247cb99b67c7f03"},{url:"img/doc.jpg",revision:"a8f93ac767b81dad64920fa73124f1bb"},{url:"img/pwa-brand.jpg",revision:"1e53acfc5630ff50408847291811df21"}],{}),e.registerRoute(/\.(?:html|htm|xml)$/,new e.StaleWhileRevalidate({cacheName:"markup",plugins:[new e.ExpirationPlugin({maxEntries:1e3,maxAgeSeconds:1800})]}),"GET"),e.registerRoute(/\.(?:png|jpg|gif)$/,new e.CacheFirst({cacheName:"images",plugins:[new e.ExpirationPlugin({maxEntries:1e3,maxAgeSeconds:1800})]}),"GET"),e.registerRoute(/\.(?:css|js)$/,new e.CacheFirst({cacheName:"assets",plugins:[new e.ExpirationPlugin({maxEntries:1e3,maxAgeSeconds:1800})]}),"GET")}));
+//# sourceMappingURL=sw.js.map

@@ -1,0 +1,23 @@
+{
+  "name": "pwa-learning",
+  "version": "1.0.0",
+  "description": "*By Dennis Burger, Poort80 Amsterdam, september 2022*",
+  "main": "index.js",
+  "scripts": {
+    "build": "node sw-generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dutchwebworks/pwa-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dutchwebworks/pwa-learning/issues"
+  },
+  "homepage": "https://github.com/dutchwebworks/pwa-learning#readme",
+  "devDependencies": {
+    "workbox-build": "^6.4.2"
+  }
+}
