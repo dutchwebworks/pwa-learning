@@ -5,17 +5,17 @@ workbox.generateSW({
     cacheId: "pwa-learning",
     globDirectory: "./src",
     globIgnores: [
-      "**/sw-generator.js",
-      "**/sw.js",
-      "node_modules/**/*"
+        "**/sw-generator.js",
+        "**/sw.js",
+        "node_modules/**/*"
     ],
 
     // Pre-caching
     globPatterns: [
         "**/*.{css,js}",
-        "**/*.{jpg,ico}",
-        // "**/*.{html,htm}",
-        // "**/*.{png,jpg}",
+        "assets/img/**/*.{jpg,png}",
+        "img/{pwa-brand,doc}.jpg",
+        "**/*.ico"
     ],  
 
     // Runtime-caching
