@@ -26,8 +26,7 @@ workbox.generateSW({
             options: {
                 cacheName: "markup",
                 expiration: {
-                    maxEntries: 1000,
-                    maxAgeSeconds: 1800,
+                    maxEntries: 1000
                 },
             },
         },
@@ -37,8 +36,7 @@ workbox.generateSW({
             options: {
                 cacheName: "images",
                 expiration: {
-                    maxEntries: 1000,
-                    maxAgeSeconds: 1800,
+                    maxEntries: 1000
                 },
             },
         },
@@ -48,8 +46,7 @@ workbox.generateSW({
             options: {
                 cacheName: "assets",
                 expiration: {
-                    maxEntries: 1000,
-                    maxAgeSeconds: 1800,
+                    maxEntries: 1000
                 },
             },
         },
