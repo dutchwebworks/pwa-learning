@@ -3,8 +3,8 @@ const {generateSW} =  require('workbox-build');
 
 generateSW({
     // Destination directory of build service-worker file
-    swDest: "docs/sw.js",
-    globDirectory: "docs",
+    swDest: "dist/sw.js",
+    globDirectory: "dist",
 
     // Precache
     globPatterns: [
