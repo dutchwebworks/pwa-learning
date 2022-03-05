@@ -1,6 +1,6 @@
 # PWA Learning
 
-*By Dennis Burger, Poort80 Amsterdam, september 2022*
+*By Dennis Burger, Poort80 Amsterdam, march 2022*
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Run the following NPM script to start a local web server.
 npm run dev
 ```
 
-According to the `package.json` file settings; the `docs/` directory is being served to the web browser. This `docs/` directory is used deliberately to host this repo's demo on Github Pages. Which requires your site to be in the `docs/` directory.
+According to the `package.json` file settings; the `dist/` directory is being served to the web browser.
 
 ### Open web browser
 
