@@ -1,9 +1,9 @@
 const workbox = require("workbox-build");
 
 workbox.generateSW({
-  swDest: "./src/sw.js",
+  swDest: "./dist/sw.js",
   cacheId: "pwa-learning",
-  globDirectory: "./src",
+  globDirectory: "./dist",
   globIgnores: ["**/sw-generator.js", "**/sw.js", "node_modules/**/*"],
 
   // Pre-caching
