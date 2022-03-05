@@ -4,7 +4,7 @@
   "description": "By Dennis Burger, Poort80 Amsterdam, september 2022",
   "main": "index.js",
   "scripts": {
-    "dev": "npx http-server -p 3000 ./src",
+    "dev": "npx http-server -p 3000 ./dist",
     "build": "node sw-generator.js"
   },
   "repository": {
