@@ -1,6 +1,6 @@
 # PWA Learning
 
-*By Dennis Burger, Poort80 Amsterdam, september 2018*
+*By Dennis Burger, Poort80 Amsterdam, september 2022*
 
 ## Prerequisites
 
