@@ -8,9 +8,8 @@ workbox.generateSW({
 
   // Pre-caching
   globPatterns: [
-    "**/*.{css,js}",
-    "assets/img/**/*.{jpg,png}",
-    "**/*.ico",
+    "**/*.{html,css,js}",
+    "**/*.{jpg,png,ico}"
   ],
 
   // Runtime-caching
