@@ -1,24 +1,16 @@
 {
   "name": "pwa-learning",
-  "version": "1.0.0",
-  "description": "By Dennis Burger, Poort80 Amsterdam, september 2022",
-  "main": "index.js",
+  "version": "0.2.0",
+  "description": "PWA learning",
   "scripts": {
-    "dev": "npx http-server -p 3000 ./dist",
-    "build": "node sw-generator.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dutchwebworks/pwa-learning.git"
+    "build": "esbuild sw.ts --bundle --outfile=./dist/sw.js && workbox injectManifest workbox-config.js"
   },
   "keywords": [],
-  "author": "Dennis Burer <dennis@dutchwebworks.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dutchwebworks/pwa-learning/issues"
-  },
-  "homepage": "https://github.com/dutchwebworks/pwa-learning#readme",
+  "author": "Dennis Burger",
+  "license": "ISC",
   "devDependencies": {
-    "workbox-build": "^6.4.2"
+    "esbuild": "^0.15.15",
+    "workbox-cli": "^6.5.4",
+    "workbox-precaching": "^6.5.4"
   }
 }

@@ -1,7 +1,5 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js")
-  });
-} else {
-  document.getElementById("js-no-service-worker").removeAttribute("hidden");
-}
+window.addEventListener("load", () => {
+    if("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+    }
+});
