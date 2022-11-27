@@ -2235,7 +2235,7 @@ This is generally NOT safe. Learn more at https://bit.ly/wb-precache`;
   };
 
   // sw.ts
-  precacheAndRoute([{"revision":"f7d779ebc4f16475b489f64a2a14b0eb","url":"about.html"},{"revision":"0e48ad86ea9a8178a4465d419f2c7367","url":"css/style.css"},{"revision":"c8496968fa3e8c12a83b87559f4aed45","url":"index.html"},{"revision":"3cb1b4de5c716c47fdcb7409b5ca902b","url":"js/registerSW.js"},{"revision":"4967929ffde74bccc25a0e9536ecdce6","url":"img/pwa-logo.png"}]);
+  precacheAndRoute([{"revision":"f7d779ebc4f16475b489f64a2a14b0eb","url":"about.html"},{"revision":"0e48ad86ea9a8178a4465d419f2c7367","url":"css/style.css"},{"revision":"c8496968fa3e8c12a83b87559f4aed45","url":"index.html"},{"revision":"3cb1b4de5c716c47fdcb7409b5ca902b","url":"js/registerSW.js"},{"revision":"6c8b47c08c398922a247cb99b67c7f03","url":"img/delorean.jpg"},{"revision":"a8f93ac767b81dad64920fa73124f1bb","url":"img/doc.jpg"},{"revision":"1e53acfc5630ff50408847291811df21","url":"img/pwa-brand.jpg"},{"revision":"4967929ffde74bccc25a0e9536ecdce6","url":"img/pwa-logo.png"}]);
   var imageRoute = new Route(({ request, sameOrigin }) => {
     return sameOrigin && request.destination === "image";
   }, new CacheFirst({
