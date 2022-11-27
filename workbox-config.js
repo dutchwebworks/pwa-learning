@@ -3,7 +3,8 @@ module.exports = {
 	globDirectory: './dist',
 	globPatterns: [
 		'**/*.{js,html,css}',
-		'img/{delorean.jpg,doc.jpg,pwa-brand.jpg,pwa-logo.png}'
+		'img/{delorean.webp,doc.jpg,pwa-brand.webp,pwa-logo.webp}',
+		'fonts/*.woff2'
 	],
 
 	globIgnores: [

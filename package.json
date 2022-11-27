@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "PWA learning",
   "scripts": {
-    "build": "esbuild sw.ts --bundle --outfile=./dist/sw.js && workbox injectManifest workbox-config.js"
+    "build": "esbuild sw.ts --bundle --minify --outfile=./dist/sw.js && workbox injectManifest workbox-config.js"
   },
   "keywords": [],
   "author": "Dennis Burger",

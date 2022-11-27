@@ -1,10 +1,31 @@
+/* Fonts
+---------------------------------- */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts/Open-Sans-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts/Open-Sans-Bold.woff2) format('woff2');
+}
+
 /* Common
 ---------------------------------- */
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.6;
 	color: #444;
 }
@@ -26,7 +47,8 @@ h3 {
 }
 
 img {
-	max-width: 100%;
+	max-inline-size: 100%;
+  	block-size: auto;
 }
 
 a {
@@ -40,9 +62,6 @@ a {
 	max-width: 768px;
 	margin: 0 auto;
 	padding: 0 20px;
-}
-
-main {
 }
 
 /* Navigation
@@ -67,7 +86,7 @@ nav li {
 }
 
 nav a {
-	color: #aaa;
+	color: #333;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 700;

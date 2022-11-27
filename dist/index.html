@@ -3,8 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=0, user-scalable=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=0">
 
+	<title>PWA Learning - Home</title>
+	<meta name="description" content="Learning about PWA's and best practices">
+
+	<link rel="preload" href="/fonts/Open-Sans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Open-Sans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 	<meta name="theme-color" content="deeppink">
@@ -15,29 +21,27 @@
 	<!-- Start: iOS PWA requirements -->
 	<meta name="apple-mobile-web-app-title" content="PWA Learning">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="apple-touch-icon" type="image" sizes="128x128" href="/assets/img/icon-128x128.png">
-	<link rel="apple-touch-icon" type="image" sizes="144x144" href="/assets/img/icon-144x144.png">
-	<link rel="apple-touch-icon" type="image" sizes="152x152" href="/assets/img/icon-152x152.png">
-	<link rel="apple-touch-icon" type="image" sizes="192x192" href="/assets/img/icon-192x192.png">
-	<link rel="apple-touch-icon" type="image" sizes="384x384" href="/assets/img/icon-384x384.png">
-	<link rel="apple-touch-icon" type="image" sizes="512x512" href="/assets/img/icon-512x512.png">
-	<link rel="apple-touch-icon" type="image" sizes="72x72" href="/assets/img/icon-72x72.png">
-	<link rel="apple-touch-icon" type="image" sizes="96x96" href="/assets/img/icon-96x96.png">
-	<link href="/assets/img/d.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-	<link href="/assets/img/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-	<link href="/assets/img/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-	<link href="/assets/img/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-	<link href="/assets/img/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-	<link href="/assets/img/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-	<link href="/assets/img/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-icon" type="image" sizes="128x128" href="/img/icons/icon-128x128.png">
+	<link rel="apple-touch-icon" type="image" sizes="144x144" href="/img/icons/icon-144x144.png">
+	<link rel="apple-touch-icon" type="image" sizes="152x152" href="/img/icons/icon-152x152.png">
+	<link rel="apple-touch-icon" type="image" sizes="192x192" href="/img/icons/icon-192x192.png">
+	<link rel="apple-touch-icon" type="image" sizes="384x384" href="/img/icons/icon-384x384.png">
+	<link rel="apple-touch-icon" type="image" sizes="512x512" href="/img/icons/icon-512x512.png">
+	<link rel="apple-touch-icon" type="image" sizes="72x72" href="/img/icons/icon-72x72.png">
+	<link rel="apple-touch-icon" type="image" sizes="96x96" href="/img/icons/icon-96x96.png">
+	<link href="/img/icons/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/img/icons/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/img/icons/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="/img/icons/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="/img/icons/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/img/icons/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/img/icons/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 	<!-- END: iOS -->
 
 	<link href="/css/style.css" rel="stylesheet">
 	<link href="/app.webmanifest" rel="manifest">
 
 	<script src="/js/registerSW.js" defer></script>
-	
-	<title>PWA Learning - Home</title>
 </head>
 
 <body>
@@ -51,8 +55,8 @@
 				<ul>
 					<li class="is-active"><a href="/">Home</a></li>
 					<li><a href="/about.html">About</a></li>
-					<li class="nav__icon"><img src="/img/pwa-logo.png" alt="PWA"></li>
-d				</ul>
+					<li class="nav__icon"><img src="/img/pwa-logo.webp" width="65" height="25" alt="PWA"></li>
+				</ul>
 			</nav>
 		</header>
 
@@ -68,7 +72,7 @@ d				</ul>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptas.</p>
 
 			<p>
-				<img src="/img/delorean.jpg" alt="DeLorean">
+				<img src="/img/delorean.webp" width="768" height="512"  alt="DeLorean">
 			</p>
 
 			<p>Veniam neque non deleniti vitae et a libero quidem nemo.</p>
