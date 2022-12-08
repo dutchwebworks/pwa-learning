@@ -3,13 +3,18 @@
   "version": "0.2.0",
   "description": "PWA learning",
   "scripts": {
+    "build:css": "postcss ./src/css/style.css --dir ./dist/css",
+    "watch:css": "postcss ./src/css/style.css --dir ./dist/css -w",
     "build": "esbuild sw.ts --bundle --minify --outfile=./dist/sw.js && workbox injectManifest workbox-config.js"
   },
   "keywords": [],
   "author": "Dennis Burger",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^5.1.14",
     "esbuild": "^0.15.15",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.1.0",
     "workbox-cli": "^6.5.4",
     "workbox-precaching": "^6.5.4"
   }
