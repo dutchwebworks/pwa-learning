@@ -12,8 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^5.1.14",
-    "esbuild": "^0.15.15",
-    "postcss": "^8.4.19",
+    "esbuild": "^0.17.5",
+    "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "workbox-cli": "^6.5.4",
     "workbox-precaching": "^6.5.4"
