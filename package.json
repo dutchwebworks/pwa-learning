@@ -15,7 +15,7 @@
     "esbuild": "^0.17.5",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
-    "workbox-cli": "^6.5.4",
+    "workbox-cli": "^7.3.0",
     "workbox-precaching": "^6.5.4"
   }
 }
