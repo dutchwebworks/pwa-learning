@@ -12,10 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^5.1.14",
-    "esbuild": "^0.17.5",
+    "esbuild": "^0.25.0",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
-    "workbox-cli": "^6.5.4",
+    "workbox-cli": "^7.3.0",
     "workbox-precaching": "^6.5.4"
   }
 }
